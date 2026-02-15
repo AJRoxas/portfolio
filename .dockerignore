@@ -1,0 +1,33 @@
+# Dependencies (installed inside container)
+node_modules
+
+# Build output (rebuilt inside container)
+dist
+dist-ssr
+
+# Git
+.git
+.gitignore
+
+# Environment / secrets
+.env
+.env.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Editor / OS
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage
+
+# Docs / misc
+README.md
