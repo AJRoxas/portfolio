@@ -1,26 +1,54 @@
-# portfolio
-My portfolio page!
+<p align='center'>🌐<b>Visit my personal site at: <a href="https://ajroxas.github.io/">ajroxas.github.io</a></b>🌐</p>
 
-# Running docker
+<p align='center'>👷<i>Still WIP</i>👷</p>
+
+# Personal Site
+
+Hi! This is the repository for my personal site!
+
+The motivation for creating this site is to showcase my skills and accomplishments throughout both my academic and work career. 
+
+Thia repository follows CI/CD practices by using Github Actions to:
+- Deploy and build Docker image to Github Container Registry
+- Deploy page to GitHub Pages
+
+## Built Width
+
+- animejs
+- Docker
+- Figma
+- React
+- Tailwind CSS
+- TypeScript
+- Vite
+
+## 🌐 Live Site
+
+https://ajroxas.github.io/
+
+## 🐳 Docker Image
+
+### GHCR Docker Image
+
+https://github.com/AJRoxas/ajroxas.github.io/pkgs/container/ajroxas.github.io
+
+Local setup:
 ```
-docker build -t portfolio .
-docker run -p 8080:80 portfolio
+# Install via CLI 
+docker pull ghcr.io/ajroxas/ajroxas.github.io:main
+
+# Run
+docker run -p 8080:80 ghcr.io/USERNAME/REPO_NAME
 ```
 
-# React + Vite
+### Local Docker Image
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Setup:
+```
+# Build local Dockerfile
+docker build -t ajroxas.github.io .
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Run
+docker run -p 8080:80 ajroxas.github.io
+```
 
