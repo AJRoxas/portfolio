@@ -1,5 +1,5 @@
 # Step 1: Base image
-FROM node:24-alpine3.23 AS base
+FROM node:24-alpine AS base
 
 # Step 2: Set environment variables
 ENV APP_HOME=/usr/app
