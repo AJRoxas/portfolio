@@ -26,6 +26,15 @@ This repository follows CI/CD practices by using Github Actions to:
 
 https://ajroxas.github.io/
 
+## ⚡ Vite
+
+Make sure node version is at least `24.x`!
+
+Run:
+```
+npx vite
+```
+
 ## 🐳 Docker Image
 
 ### GHCR Docker Image
