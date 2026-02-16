@@ -8,8 +8,8 @@ Hi! This is the repository for my personal site!
 
 The motivation for creating this site is to showcase my skills and accomplishments throughout both my academic and work career. 
 
-Thia repository follows CI/CD practices by using Github Actions to:
-- Deploy and build Docker image to Github Container Registry
+This repository follows CI/CD practices by using Github Actions to:
+- Deploy and build the Docker image to Github Container Registry
 - Deploy page to GitHub Pages
 
 ## Built Width
@@ -32,23 +32,25 @@ https://ajroxas.github.io/
 
 https://github.com/AJRoxas/ajroxas.github.io/pkgs/container/ajroxas.github.io
 
-Local setup:
+Install via CLI:
 ```
-# Install via CLI 
 docker pull ghcr.io/ajroxas/ajroxas.github.io:main
+```
 
-# Run
+Run:
+```
 docker run -p 8080:80 ghcr.io/USERNAME/REPO_NAME
 ```
 
 ### Local Docker Image
 
-Setup:
+Build image of local Dockerfile
 ```
-# Build local Dockerfile
 docker build -t ajroxas.github.io .
+```
 
-# Run
+Run:
+```
 docker run -p 8080:80 ajroxas.github.io
 ```
 
